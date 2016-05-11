@@ -1,0 +1,33 @@
+* {box-sizing:border-box;font-size: 16px;vertical-align: middle;}
+/* 清除现代IE浏览器的输入框和密码框的默认交互按钮 */
+::-ms-clear, ::-ms-reveal{display: none;}
+input {box-sizing:border-box;}
+input:active, input:focus{ outline:none; -moz-outline:none;} /* PC chrome文本输入框的边框焦点时候的颜色 */
+input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner{ border:none;} /*去掉移动端firefox 按钮获得焦点显示虚线框的样式 */
+
+/* main style */
+.inputClear {
+	position:relative;
+	display: inline-block;
+}
+.inputClear > input {
+	/*width: auto; 
+	height: auto;*/ /*默认input的宽高可以同时结合width\height来重写input框的宽度/高度*/
+	/*line-height: 36px;*/ /*控制input框文字的高度可以同时结合height来重写input框文字的高度*/
+	padding-right: 36px !important;
+	padding-right: 36px;
+	padding-left: 10px;
+}
+.inputClear > .deleteEle {
+	display: none;
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	top: 50%;
+	margin-top: -12px;
+	right: 6px;
+	background:url(image/delete.png) 50% 50% no-repeat;
+	background-size: 24px 24px;
+	z-index: 1;
+	cursor: pointer;
+}

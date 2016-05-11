@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>input框清空和密码的明文显示</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <link href="css/inputClear.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet"><!--自己书写input样式-->
+
+   <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+   <script src="js/inputClear.js"></script>
+   <script>
+   $(function(){
+    var _input = new inputClear('inputClear');
+   });
+   </script>
+   
+</head>
+<body>
+
+
+  <!--原始input输入框做比较使用-->
+  <h1>原始input示例</h1>
+  <input type="text" placeholder="请填入姓名"/>
+
+
+  <!--原始input输入框做比较使用-->
+  <h1>插件更改input</h1>
+  <div class="inputClear">
+    <input type="text" placeholder="请填入姓名"/>
+    <span class="deleteEle"></span>
+  </div>
+
+  <div class="inputClear">
+    <input type="text" placeholder="请填入姓名"/>
+    <span class="deleteEle"></span>
+  </div>
+  
+
+</body>
+</html>
