@@ -1,4 +1,4 @@
-<h2>inputClear.js简介<a href="http://www.shdnfw.com/plugin/inputClear/demo.html">input框的手动清空（inputClear.js）的使用示例</a></h2>
+<h2>inputClear.js简介&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.shdnfw.com/plugin/inputClear/demo.html">input框的手动清空（inputClear.js）的使用示例</a></h2>
 <p>inputClear.js是基于jquery封装开发用于实现input框的清空功能的js组件，用于格式化一个或多个input框，实现input框的清空</p>
 
 <hr/>
@@ -25,13 +25,13 @@
 ```html
 <div class="inputClear">
   <input type="text" placeholder="请填入姓名"/>
-<span class="deleteEle"></span>
+  <span class="deleteEle"></span>
 </div>
 ```
 
 <h4>css（添加当前样式）：</h4>
 ```html
-<link-tag rel="stylesheet" type="text/css" href="....../inputClear.css" />
+<link rel="stylesheet" type="text/css" href="....../inputClear.css" />
 ```
 
 <h4>js（实例化相应的密码显示框）：</h4>
