@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>input框的手动清空（inputClear.js）的使用示例</title>
+
+	<link rel="stylesheet" type="text/css" href="css/inputClear.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+   	<script src="js/inputClear.js"></script>
+   	<script type="text/javascript">
+   		$(function(){
+   			var _input = new inputClear('inputClear');
+   			console.log(_input)
+   		});
+   	</script>
+</head>
+<body>
+
+	<div class="container">
+		
+		<h2>input框的手动清空（inputClear.js）的使用示例</h2>
+	    <div class="paramItem">
+	    	<strong>以下为测试数据<small>（填写测试）</small></strong>
+	    </div>
+
+	    <!--原始input输入框做比较使用-->
+		<h3>原始input示例</h3>
+		<input type="text" placeholder="请填入姓名"/>
+
+
+		<!--原始input输入框做比较使用-->
+		<h3>插件更改input</h3>
+		<div class="inputClear">
+		    <input type="text" placeholder="请填入姓名"/>
+		    <span class="deleteEle"></span>
+		</div>
+
+		<div class="inputClear">
+		    <input type="text" placeholder="请填入姓名"/>
+		    <span class="deleteEle"></span>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>input框清空和密码的明文显示</title>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-   <link href="css/inputClear.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet"><!--自己书写input样式-->
+	<meta charset="utf-8" />
+	<title>input框清空功能</title>
 
-   <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
-   <script src="js/inputClear.js"></script>
-   <script>
-   $(function(){
-    var _input = new inputClear('inputClear');
-   });
-   </script>
-   
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
 
+	<div class="container">
+		<h2>inputClear.js简介<a href="demo.html">input框的手动清空（inputClear.js）的使用示例</a></h2>
+		<p>inputClear.js是基于jquery封装开发用于实现input框的清空功能的js组件，用于格式化一个或多个input框，实现input框的清空</p>
 
-  <!--原始input输入框做比较使用-->
-  <h1>原始input示例</h1>
-  <input type="text" placeholder="请填入姓名"/>
+		<hr/>
 
+		<h3>1、开始工作：</h3>
+		<p>
+			最先引入jquery (Bootstrap中文网开源项目免费 CDN 服务)：
+		</p>
+		<pre><script-tag type="text/javascript" src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script-tag></pre>
+		<p>
+			再次页面中引入：
+		</p>
+		<pre><script-tag type="text/javascript" src="....../inputClear.js"></script-tag></pre>
 
-  <!--原始input输入框做比较使用-->
-  <h1>插件更改input</h1>
-  <div class="inputClear">
+		<h3>2、使用：</h3>
+		<h4>html：</h4>
+		<p>
+			（固定格式html准备）
+		</p>
+		<pre><div class="inputClear">
     <input type="text" placeholder="请填入姓名"/>
     <span class="deleteEle"></span>
-  </div>
+</div></pre>
 
-  <div class="inputClear">
-    <input type="text" placeholder="请填入姓名"/>
-    <span class="deleteEle"></span>
-  </div>
-  
+		<h4>css（添加当前样式）：</h4>
+		<pre><link-tag rel="stylesheet" type="text/css" href="....../inputClear.css" /></pre>
+
+		<h4>js（实例化相应的密码显示框）：</h4>
+		<pre>var _input = new inputClear('inputClear');</pre>
+
+		<h3>3、说明：</h3>
+		<p>
+			其中inputClear.css为该组件样式必须引进，当你需要更改input框样式的时候，请按需适当修改即可
+		</p>
+
+		<h3>4、兼容性：</h3>
+		<p>
+			兼容IE8及以上浏览器
+		</p>
+
+	</div>
 
 </body>
+<script type="text/javascript">
+	$('pre').each(function(){
+		var _tmp = $(this).html();
+		_tmp = _tmp.replace(new RegExp('<','gm'),'&lt;').replace(new RegExp('script-tag',"gm"),'script').replace(new RegExp('link-tag',"gm"),'link');
+		$(this).html(_tmp);
+	});
+</script>
 </html>
