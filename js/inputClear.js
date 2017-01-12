@@ -53,10 +53,10 @@ inputClear.prototype.init = function(ele){
 
         });
 
-        T.deleteEle.on('click',function(){
+        T.deleteEle.on('mousedown',function(){
 
             var t = $(this);
-            var _btn = t.parent().children('input')
+            var _btn = t.parent().children('input');
 
             t.hide();
             _btn.val('');
